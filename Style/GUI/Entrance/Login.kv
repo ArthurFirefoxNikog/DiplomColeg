@@ -1,0 +1,61 @@
+MDAnchorLayout:
+    
+    anchor_x: 'center'
+    anchor_y: 'center'
+
+    canvas.before:
+        Color:
+            rgba: (1, 0, 0, 1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    MDBoxLayout:
+        
+        orientation: 'vertical'
+
+        size_hint: (0.4, 0.4)
+
+        TextInput:
+
+            id: 'login_input'
+
+            text: ''
+            hint_text: 'Login'
+            size_hint_y: 0.5
+
+            multiline: False
+
+        TextInput:
+            
+            id: 'password_input'
+
+            text: ''
+            hint_text: 'Password'
+            size_hint_y: 0.5
+
+            multiline: False
+            password: True
+
+        MDRaisedButton:
+            text: 'Login'
+            size_hint: (1, 1)
+            md_bg_color: (0,0,0,0)
+            shadow_color: (0,0,0,0)
+            radius: [190,]
+            canvas.before:
+                Color:
+                    rgba: (.4,.4,.4,1) if self.state=='normal' else (0,.7,.7,1)  # visual feedback of press
+                RoundedRectangle:
+                    pos: self.pos
+                    size: self.size
+                    radius: [190,]
+            
+
+        Button:
+            text: 'Register'
+
+            
+
+
+        

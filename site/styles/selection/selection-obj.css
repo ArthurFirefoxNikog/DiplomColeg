@@ -1,0 +1,8 @@
+.select-button-translate{
+    border-color: var(--select-button-translate-bdr-color);
+    color: var(--select-button-translate-color);
+    transform: scale(1.05);
+    font-weight: bold;
+
+    animation: var(--select-button-translate-animation);
+}

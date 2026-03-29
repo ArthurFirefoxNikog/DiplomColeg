@@ -1,0 +1,69 @@
+:root {
+
+    --bg-color: rgb(17, 17, 17);
+    --bdr-color: rgb(204, 0, 255);
+    --text-color: rgb(204, 0, 255);
+    --placeholder-color: rgb(123, 8, 151);
+
+    --focus-and-hover-text-color:  rgb(255, 251, 0);
+    --focus-and-hover-bdr-color: rgb(255, 196, 0);
+    --focus-and-hover-placeholder-color: rgb(255, 238, 0);
+    --focus-and-hover-animation: lightGlowFocus 3s infinite ease-in-out;
+
+    --active-text-color: rgb(0, 0, 0);
+    --active-bg-color: rgb(255, 238, 0);
+    --active-bdr-color: rgb(255, 196, 0);
+    --active-animation: lightGlowFocus 3s infinite ease-in-out;
+
+    --select-button-translate-color: rgb(69, 104, 211);
+    --select-button-translate-bdr-color: rgb(69, 104, 211);
+    --select-button-translate-animation: AnimationLightSelection 2.5s infinite ease-in-out;
+
+    --bvp-bg-image-not-vision: url("../../pictures/icon/Vision/NightTheme/NotVision/not-vision-no-select.png");
+    --bvp-bg-image-not-vision-focus-and-hover: url("../../pictures/icon/Vision/NightTheme/NotVision/not-vision-select.png");
+    --bvp-bg-image-not-vision-action: url("../../pictures/icon/Vision/NightTheme/NotVision/not-vision-click.png");
+
+    --bvp-bg-image-vision: url("../../pictures/icon/Vision/NightTheme/Vision/vision-no-select.png");
+    --bvp-bg-image-vision-focus-and-hover: url("../../pictures/icon/Vision/NightTheme/Vision/vision-select.png");
+    --bvp-bg-image-vision-action: url("../../pictures/icon/Vision/NightTheme/Vision/vision-click.png");
+
+    --button-theme-bg-image-light-no-select: url("../../pictures/icon/Theme/Light/Light-no-select.png");
+    --button-theme-bg-image-light-select: url("../../pictures/icon/Theme/Light/Light-select.png");
+    --button-theme-bg-image-light-click: url("../../pictures/icon/Theme/Light/Light-click.png");
+
+}
+
+.light-theme {
+
+    --bg-color: rgb(254, 255, 195);
+    --bdr-color: rgb(128, 8, 88);
+    --text-color: rgb(128, 8, 88);
+    --placeholder-color: rgb(88, 17, 65);
+
+    --focus-and-hover-text-color: rgb(0, 153, 255);
+    --focus-and-hover-bdr-color: rgb(0, 225, 255);
+    --focus-and-hover-placeholder-color: rgb(0, 204, 255);
+    --focus-and-hover-animation: lightGlowFocusLightTheme 3s infinite ease-in-out;
+
+    --active-text-color: rgb(0, 0, 0);
+    --active-bg-color: rgb(0, 225, 255);
+    --active-bdr-color: rgb(0, 204, 255);
+    --active-animation: lightGlowFocusLightTheme 3s infinite ease-in-out;
+
+    --select-button-translate-color: rgb(211, 166, 69);
+    --select-button-translate-bdr-color: rgb(211, 161, 69);
+    --select-button-translate-animation: AnimationLightSelectionLightTheme 2.5s infinite ease-in-out;
+
+    --bvp-bg-image-not-vision: url("../../pictures/icon/Vision/LightTheme/NotVision/not-vision-no-select.png");
+    --bvp-bg-image-not-vision-focus-and-hover: url("../../pictures/icon/Vision/LightTheme/NotVision/not-vision-select.png");
+    --bvp-bg-image-not-vision-action: url("../../pictures/icon/Vision/LightTheme/NotVision/not-vision-click.png");
+
+    --bvp-bg-image-vision: url("../../pictures/icon/Vision/LightTheme/Vision/vision-no-select.png");
+    --bvp-bg-image-vision-focus-and-hover: url("../../pictures/icon/Vision/LightTheme/Vision/vision-select.png");
+    --bvp-bg-image-vision-action: url("../../pictures/icon/Vision/LightTheme/Vision/vision-click.png");
+
+    --button-theme-bg-image-light-no-select: url("../../pictures/icon/Theme/Night/Night-no-select.png");
+    --button-theme-bg-image-light-select: url("../../pictures/icon/Theme/Night/Night-select.png");
+    --button-theme-bg-image-light-click: url("../../pictures/icon/Theme/Night/Night-click.png");
+
+}

@@ -1,0 +1,38 @@
+{
+    "buttons-lang": ["Орс", "Ағл", "Қаз"],
+    "form": {
+        "status": ["Кіру", "Тіркеу"],
+        "input-login": {
+            "placeholder": {
+                "login": "Кіру:",
+                "password": "Құпия сөз:"
+            },
+            "text": {
+                "login": "Логиніңізді енгізіңіз:",
+                "password": "Құпия сөзіңізді енгізіңіз:"
+            },
+            "buttons": {
+                "login": "Кіру", 
+                "register": "Тіркеу"
+            }
+        },
+        "input-registration": {
+            "placeholder": {
+            "email": "Электрондық пошта мекенжайыңызды енгізіңіз:", 
+            "create-login": "Логин жасаңыз:", 
+            "password": "Құпия сөзді енгізіңіз:", 
+            "password-confirmation": "Растау үшін құпия сөзіңізді қайта енгізіңіз:"
+            },
+            "text": {
+                "email": "Электрондық поштаның адресі:", 
+                "create-login": "Логин жасау:",
+                "password": "Құпия сөз:", 
+                "password-confim": "Құпия сөзді растау:"
+            },
+            "buttons": {
+                "confim": "Растау", 
+                "login": "Кіру"
+            }
+        }
+    }
+}

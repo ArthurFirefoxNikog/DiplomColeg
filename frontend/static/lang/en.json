@@ -1,0 +1,168 @@
+{
+    "buttons-lang": ["Rus", "Eng", "Kaz"],
+    "form": {
+        "status": ["Entrance", "Registration"],
+        "input-login": {
+            "placeholder": {
+                "login": "Login:",
+                "password": "Password:"
+            },
+            "text": {
+                "login": "Enter your login:",
+                "password": "Enter your password:"
+            },
+            "buttons": {
+                "login": "Login", 
+                "register": "Registration"
+            }
+        },
+        "input-registration": {
+            "placeholder": {
+            "email": "Enter your email:", 
+            "create-login": "Enter your new-login:", 
+            "password": "Enter your password:", 
+            "password-confirmation": "Repeat password:"
+            },
+            "text": {
+                "email": "Email:", 
+                "create-login": "Create login:", 
+                "password": "Password:", 
+                "password-confim": "Password confirmation:"
+            },
+            "buttons": {
+                "confim": "Confirm", 
+                "login": "Login"
+            } 
+        }
+    },
+    "res":{
+        "profile":{
+            "text":{
+                "email": "Email:",
+                "login": "Login:",
+                "date": "Date of registration:"
+            },
+            "button-link-for-index": "Home page"
+        }
+    },
+    "index":{
+        "head": {
+            "button": {
+                "theme": "Change of theme",
+                "language": "English"
+            },
+            "navigation": [
+                "Home", 
+                "About the system", 
+                "Possibilities", 
+                "Moodle integration"
+            ]
+        },
+        "section-hero":{
+            "htitle": "Secure Student Identification Module in Moodle",
+            "text": "A modern solution for securely logging students into the Moodle educational environment using robust credential verification and protection from unauthorized access.",
+            "buttons": {
+                "exitBut": "Exit",
+                "profileBut": "Profile",
+                "readBut": "Read more"
+            },
+            "heroCard": {
+                "h3title": "Purpose of the system",
+                "ul-text": [
+                    "user authentication before accessing the system;",
+                    "secure processing of student credentials;",
+                    "monitoring successful and unsuccessful login attempts;",
+                    "Increasing the security level of the Moodle educational platform."
+                ]
+            }
+        },
+        "about": {
+            "h2title": "About the system",
+            "text": "This module is designed to enhance the security of student access to the Moodle educational platform. The system provides user authentication, secure credential processing, and login attempt monitoring.",
+            "ul-text": [
+                "reducing the risk of unauthorized access to student accounts;",
+                "protection of educational materials and personal data of users;",
+                "increasing the overall reliability of the authorization system;",
+                "possibility of further integration and expansion of functionality."
+            ]
+        },
+        "features": {
+            "h2title": "Key Features",
+            "text": "Key functions implemented in the secure student identification module.",
+            "card": [
+                {
+                    "h3title": "Secure login",
+                    "text": "Verifying the user's login and password before granting access to the account."
+                },
+                {
+                    "h3title": "Password protection",
+                    "text": "Secure processing and storage of credentials to enhance system security."
+                },
+                {
+                    "h3title": "Monitoring login attempts",
+                    "text": "Recording successful and unsuccessful authorization attempts to identify suspicious activity."
+                },
+                {
+                    "h3title": "Moodle integration",
+                    "text": "Using the module as an additional mechanism for identifying students in the Moodle system."
+                }
+            ]
+        },
+        "benefits": {
+            "h2title": "Advantages of the system",
+            "ul-text": [
+                "protecting student accounts;",
+                "reducing the risk of password guessing;",
+                "control of access to educational resources;",
+                "Improving the security of the Moodle platform.",
+                "possibility of expanding functionality;",
+                "the basis for the implementation of two-step authentication;",
+                "convenient work for students and administrators;",
+                "support for further integration with the existing system."
+            ]
+        },
+        "workflow": {
+            "h2title": "Operating principle",
+            "text": "Sequence of passing secure user identification.",
+            "ol-text": [
+                "The student enters the login and password.",
+                "The system is verifying your credentials.",
+                "Upon successful identification, the user gains access to the system.",
+                "All login attempts are recorded for increased security."
+            ]
+        },
+        "moodle": {
+            "h2title": "Moodle integration",
+            "text": "The module being developed is designed for use in the Moodle system as an additional layer of secure student identification. This will enhance the security of the educational platform and provide more reliable access control to educational materials and user personal data."
+        },
+        "audience": {
+            "h2title": "Who is the system suitable for?",
+            "card": [
+                {
+                    "h3title": "For students",
+                    "text": "For secure login and protection of personal data in the educational system."
+                },
+                {
+                    "h3title": "For teachers",
+                    "text": "To control student access to courses, assignments, and learning materials."
+                },
+                {
+                    "h3title": "For administrators",
+                    "text": "To manage the identification system and monitor login attempts."
+                },
+                {
+                    "h3title": "To the educational institution",
+                    "text": "To increase the level of information security when using Moodle."
+                }
+            ]
+        },
+        "footerC":{
+            "texts":[
+                "Diploma project",
+                "Developing a secure student identification module in the Moodle system",
+                "Authors: Abuamir, Arthur",
+                "Year: 2026"
+            ]
+        }
+    }
+}

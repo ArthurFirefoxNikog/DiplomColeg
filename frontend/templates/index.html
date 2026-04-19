@@ -1,0 +1,223 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"
+  >
+  <meta 
+  name="viewport" 
+  content="width=device-width, initial-scale=1.0"
+  >
+  <meta 
+  name="author"
+  content="Imin Abuamir"
+  >
+  <link 
+  rel="shortcut icon"
+  type="image/png"
+  href="{% static 'pictures/favIcon/FavIcon_v1.png' %}"
+  >
+  <link
+  rel="stylesheet"
+  href="{% static 'styles/general/reset.css' %}"
+  >
+  <link 
+  rel="stylesheet" 
+  href="{% static 'styles/general/var-theme.css' %}"
+  >
+  <link
+  rel="stylesheet" 
+  href="{% static 'styles/animation/animation-light-for-focus.css' %}"
+  >
+  <link
+  rel="stylesheet" 
+  href="{% static 'styles/animation/animation-light-for-focus-lighgtTheme.css' %}"
+  >
+  <link 
+  rel="stylesheet"
+  href="{% static 'styles/index/general.css' %}"
+  >
+  <link 
+  rel="stylesheet"
+  href="{% static 'styles/index/buttons.css' %}"
+  >
+  <link 
+  rel="stylesheet"
+  href="{% static 'styles/index/hero.css' %}"
+  >
+  <link 
+  rel="stylesheet"
+  href="{% static 'styles/index/index.css' %}"
+  >
+  <link 
+  rel="stylesheet"
+  href="{% static 'styles/index/media.css' %}"
+  >
+  <base target="_self">
+  <title>SaveMe!</title>
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">SaveMe!</div>
+      <nav>
+        <ul>
+          <li><a href="#home" data-i18n="index.head.navigation.0"></a></li>
+          <li><a href="#about" data-i18n="index.head.navigation.1"></a></li>
+          <li><a href="#features" data-i18n="index.head.navigation.2"></a></li>
+          <li><a href="#moodle" data-i18n="index.head.navigation.3"></a></li>
+          <li><button type="button" id="theme-toggle" data-i18n="index.head.button.theme"></button></li>
+          <li><button type="button" id="lang-toggle" data-i18n="index.head.button.language"></button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div>
+        <h1 data-i18n="index.section-hero.htitle"></h1>
+        <p data-i18n="index.section-hero.text"></p>
+        <div class="buttons">
+          <form method="post" action="{% url 'logout' %}">
+            {% csrf_token %}
+            <button class="btn btn-primary" data-i18n="index.section-hero.buttons.exitBut"></button>
+          </form>
+          <a href="{% url 'profile' %}" class="btn btn-secondary" data-i18n="index.section-hero.buttons.profileBut"></a>
+          <a href="#about" class="btn btn-secondary" data-i18n="index.section-hero.buttons.readBut"></a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h3 data-i18n="index.section-hero.heroCard.h3title"></h3>
+        <ul>
+          <li data-i18n="index.section-hero.heroCard.ul-text.0"></li>
+          <li data-i18n="index.section-hero.heroCard.ul-text.1"></li>
+          <li data-i18n="index.section-hero.heroCard.ul-text.2"></li>
+          <li data-i18n="index.section-hero.heroCard.ul-text.3"></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title" data-i18n="index.about.h2title"></h2>
+      <p class="section-subtitle" data-i18n="index.about.text"></p>
+      <div class="list-box">
+        <ul>
+          <li data-i18n="index.about.ul-text.0"></li>
+          <li data-i18n="index.about.ul-text.1"></li>
+          <li data-i18n="index.about.ul-text.2"></li>
+          <li data-i18n="index.about.ul-text.3"></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="container">
+      <h2 class="section-title" data-i18n="index.features.h2title"></h2>
+      <p class="section-subtitle" data-i18n="index.features.text"></p>
+      <div class="grid-4">
+        <div class="card">
+          <h3 data-i18n="index.features.card.0.h3title"></h3>
+          <p data-i18n="index.features.card.0.text"></p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="index.features.card.1.h3title"></h3>
+          <p data-i18n="index.features.card.1.text"></p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="index.features.card.2.h3title"></h3>
+          <p data-i18n="index.features.card.2.text"></p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="index.features.card.3.h3title"></h3>
+          <p data-i18n="index.features.card.3.text"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="benefits">
+    <div class="container">
+      <h2 class="section-title" data-i18n="index.benefits.h2title"></h2>
+      <div class="grid-2">
+        <div class="list-box">
+          <ul>
+            <li data-i18n="index.benefits.ul-text.0"></li>
+            <li data-i18n="index.benefits.ul-text.1"></li>
+            <li data-i18n="index.benefits.ul-text.2"></li>
+            <li data-i18n="index.benefits.ul-text.3"></li>
+          </ul>
+        </div>
+        <div class="list-box">
+          <ul>
+            <li data-i18n="index.benefits.ul-text.4"></li>
+            <li data-i18n="index.benefits.ul-text.5"></li>
+            <li data-i18n="index.benefits.ul-text.6"></li>
+            <li data-i18n="index.benefits.ul-text.7"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="workflow">
+    <div class="container">
+      <h2 class="section-title" data-i18n="index.workflow.h2title"></h2>
+      <p class="section-subtitle" data-i18n="index.workflow.text"></p>
+      <div class="steps">
+        <ol>
+          <li data-i18n="index.workflow.ol-text.0"></li>
+          <li data-i18n="index.workflow.ol-text.1"></li>
+          <li data-i18n="index.workflow.ol-text.2"></li>
+          <li data-i18n="index.workflow.ol-text.3"></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="moodle">
+    <div class="container">
+      <h2 class="section-title" data-i18n="index.moodle.h2title"></h2>
+      <p class="section-subtitle" data-i18n="index.moodle.text"></p>
+    </div>
+  </section>
+
+  <section id="audience">
+    <div class="container">
+      <h2 class="section-title" data-i18n="index.audience.h2title"></h2>
+      <div class="grid-4">
+        <div class="card">
+          <h3 data-i18n="index.audience.card.0.h3title"></h3>
+          <p data-i18n="index.audience.card.0.text"></p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="index.audience.card.1.h3title"></h3>
+          <p data-i18n="index.audience.card.1.text"></p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="index.audience.card.2.h3title"></h3>
+          <p data-i18n="index.audience.card.2.text"></p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="index.audience.card.3.h3title"></h3>
+          <p data-i18n="index.audience.card.3.text"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p data-i18n="index.footerC.texts.0"></p>
+      <p data-i18n="index.footerC.texts.1"></p>
+      <p data-i18n="index.footerC.texts.2"></p>
+      <p data-i18n="index.footerC.texts.3"></p>
+    </div>
+  </footer>
+  <script src="{% static 'script/general/themeLight.js' %}"></script>
+  <script src="{% static 'script/index/translation.js' %}"></script>
+</body>
+</html>

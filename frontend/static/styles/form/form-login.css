@@ -1,0 +1,18 @@
+.form-login{
+    height: 400px;
+    
+    margin-top: 10%;
+}
+
+.form-login-button-theme-position{
+    transform: translate(372.8px, -150px);
+}
+
+.form-login-buttons-language-position{
+    transform: translate(400.8px, -300px);
+}
+
+.form-login-button-vision-position{
+    position: absolute;
+    transform: translate(280px, -20px);
+}

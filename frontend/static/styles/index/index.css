@@ -1,0 +1,81 @@
+.container {
+    width: 90%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.header-content {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    gap: 20px; 
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 22px; 
+    font-weight: bold;
+}
+
+.section-title {
+    font-size: 34px;
+    text-align: center; 
+    margin-bottom: 20px; 
+    color: var(--section-title-text-color);
+}
+
+.section-subtitle {
+    text-align: center; 
+    max-width: 850px; 
+    margin: 0 auto 40px; 
+    color: var(--section-subtitle-text-color); 
+    font-size: 17px;
+}
+
+.grid-4 {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); gap: 20px;
+}
+
+.grid-2 {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); gap: 20px;
+}
+
+.card {
+    background: var(--bg-card-index-color); 
+    padding: 25px; 
+    border-radius: 16px; 
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: var(--text-color-index);
+}
+
+.card p {
+    color: var(--text-color-index);
+    font-size: 15px;
+}
+
+.list-box, .steps {
+    background: var(--bg-ls-index-color);
+    padding: 30px; 
+    border-radius: 16px; 
+    box-shadow: 0 8px 24px rgba(15,23,42,0.06); 
+}
+
+.list-box ul, .steps ol {
+    padding-left: 20px;
+}
+
+.list-box li, .steps li {
+    margin-bottom: 12px; 
+    color: var(--text-color-index);
+}

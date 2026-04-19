@@ -1,0 +1,65 @@
+.buttons-language{
+    position: absolute;
+
+    width: 50px;
+    height: 90px;
+
+    background-color: var(--bg-color);
+
+    border-color: var(--bdr-color);
+    border-style: double;
+    border-width: 5px;
+    border-radius: 2px;
+
+    transform: translate(500px, -250px);
+
+}
+
+.buttons-language button{
+    background-color: var(--bg-color);
+
+    width: 50px;
+    height: 30px;
+
+    border-color: var(--bdr-color);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+
+    color: var(--text-color);
+}
+
+.buttons-language button:hover {
+    color: var(--focus-and-hover-text-color);
+    border-color: var(--focus-and-hover-bdr-color);
+    animation: var(--focus-and-hover-animation);
+}
+
+.buttons-language button:active {
+    color: var(--active-text-color);
+    background-color: var(--active-bg-color);
+    border-color: var(--active-bdr-color);
+    animation: var(--active-animation);
+}
+
+.buttons-language button.select-button-translate {
+    border-color: var(--select-button-translate-bdr-color);
+    color: var(--select-button-translate-color);
+}
+
+.buttons-language button.select-button-translate:hover {
+    color: var(--focus-and-hover-text-color);
+    border-color: var(--focus-and-hover-bdr-color);
+    transform: scale(1);
+    font-weight: normal;
+    animation: var(--focus-and-hover-animation);
+}
+
+.buttons-language button.select-button-translate:active {
+    color: var(--active-text-color);
+    background-color: var(--active-bg-color);
+    border-color: var(--active-bdr-color);
+    transform: scale(1);
+    font-weight: normal;
+    animation: var(--active-animation);
+}

@@ -1,0 +1,18 @@
+.form-register{
+    height: 600px;
+
+    margin-top: 4%;
+}
+
+.form-register-button-theme-position{
+    transform: translate(372.8px, -250px);
+}
+
+.form-register-buttons-language-position{
+    transform: translate(400.8px, -500px);
+}
+
+.form-register-buttons-vision-position{
+    position: absolute;
+    transform: translate(280px, -20px);
+}

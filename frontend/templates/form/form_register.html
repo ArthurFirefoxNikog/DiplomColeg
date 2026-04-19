@@ -1,0 +1,174 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta 
+    name="viewport" 
+    content="width=device-width, initial-scale=1.0"
+    >
+    <meta 
+    name="author"
+    content="Arthur Nikogosov"
+    >
+    <link 
+    rel="shortcut icon"
+    type="image/png"
+    href="{% static 'pictures/favIcon/FavIcon_v1.png' %}"
+    >
+    <link 
+    rel="stylesheet"
+    href="{% static 'styles/general/reset.css' %}"
+    >
+    <link
+    rel="stylesheet"
+    href="{% static 'styles/general/backgr.css' %}"
+    >
+    <link
+    rel="stylesheet"
+    href="{% static 'styles/general/var-theme.css' %}"
+    >
+    <link 
+    rel="stylesheet" 
+    href="{% static 'styles/form/form.css' %}"
+    >
+    <link 
+    rel="stylesheet" 
+    href="{% static 'styles/form/form-register.css' %}"
+    >
+    <link
+    rel="stylesheet"
+    href="{% static 'styles/animation/animation-light-for-focus.css' %}"
+    >
+    <link
+    rel="stylesheet"
+    href="{% static 'styles/animation/animationө-appearances.css' %}"
+    >
+    <link 
+    rel="stylesheet" 
+    href="{% static 'styles/animation/animation-background-light-neon.css' %}"
+    >
+    <link
+    rel="stylesheet"
+    href="{% static 'styles/animation/animation-light-attention.css' %}"
+    >
+    <link
+    rel="stylesheet"
+    href="{% static 'styles/animation/animation-light-button-language-select.css' %}"
+    >
+    <link
+    rel="stylesheet"
+    href="{% static 'styles/animation/animation-light-button-language-select-lightTheme.css' %}"
+    >
+    <link
+    rel="stylesheet"
+    href="{% static 'styles/animation/animation-light-for-focus-lighgtTheme.css' %}"
+    >
+    <link 
+    rel="stylesheet" 
+    href="{% static 'styles/animation/animation-error-input.css' %}"
+    >
+    <link 
+    rel="stylesheet" 
+    href="{% static 'styles/selection/selection-obj.css' %}"
+    >
+    <link 
+    rel="stylesheet"
+    href="{% static 'styles/form/button-vision-password.css' %}"
+    >
+    <link
+    rel="stylesheet"
+    href="{% static 'styles/form/buttons-language.css' %}"
+    >
+    <link 
+    rel="stylesheet"
+    href="{% static 'styles/form/button-theme.css' %}"
+    >
+    <link 
+    rel="stylesheet" 
+    href="{% static 'styles/form/buttons-main.css' %}"
+    >
+    <base target="_self">
+    <title>SaveMe!</title>
+</head>
+<body>
+    <div class="block-form form-register appearances">
+        <p class="title-status" data-i18n="form.status.1"></p>
+        <form method="POST" action="{% url 'register' %}">
+            {% csrf_token %}
+            <div>
+                <p data-i18n="form.input-registration.text.email"></p>
+                <p>
+                    <input 
+                    name="email" 
+                    type="email" 
+                    data-i18n-placeholder="form.input-registration.placeholder.email"
+                    >
+                </p>
+            </div>
+            <div>
+                <p data-i18n="form.input-registration.text.create-login"></p>
+                <p>
+                    <input 
+                    name="username" 
+                    type="text" 
+                    data-i18n-placeholder="form.input-registration.placeholder.create-login"
+                    >
+                </p>
+            </div>
+            <div>
+                <p data-i18n="form.input-registration.text.password"></p>
+                <button
+                type="button"
+                class="button-vision-password-general button-not-vision-password form-register-buttons-vision-position"
+                id="btnVis1"
+                ></button>
+                <p>
+                    <input  
+                    type="password" 
+                    data-i18n-placeholder="form.input-registration.placeholder.password"
+                    id="pasCr"
+                    name="password"
+                    >
+                </p>
+            </div>
+            <div>
+                <p data-i18n="form.input-registration.text.password-confim"></p>
+                <button
+                type="button"
+                class="button-vision-password-general button-not-vision-password form-register-buttons-vision-position"
+                id="btnVis2"
+                ></button>
+                <p>
+                    <input
+                    type="password" 
+                    data-i18n-placeholder="form.input-registration.placeholder.password-confirmation"
+                    id="pasCon"
+                    name="password_confirm"
+                    >
+                </p>
+            </div>
+            <br>
+            <div class="buttons-position">
+                <a id="link-for-login" href="{% url 'login' %}" style="display:none;"></a>
+                <button class="buttons" data-i18n="form.input-registration.buttons.confim"></button>
+                <button type="button" class="buttons" data-i18n="form.input-registration.buttons.login" id="button-link-for-login"></button>
+            </div>
+        </form>
+        <div>
+            <div class="buttons-language form-register-buttons-language-position">
+                <ol>
+                    <li><button value="ru" data-i18n="buttons-lang.0"></button></li>
+                    <li><button value="en" data-i18n="buttons-lang.1"></button></li>
+                    <li><button value="kk" data-i18n="buttons-lang.2"></button></li>
+                </ol>
+            </div>
+        </div>
+        <button class="button-theme form-register-button-theme-position" id="theme-toggle"></button>
+    </div>
+    <script src="{% static 'script/general/translation.js' %}"></script>
+    <script src="{% static 'script/form/movement.js' %}"></script>
+    <script src="{% static 'script/form/passwordVision.js' %}"></script>
+    <script src="{% static 'script/general/themeLight.js' %}"></script>
+</body>
+</html>

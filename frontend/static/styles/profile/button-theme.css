@@ -1,0 +1,37 @@
+.icon{
+    width: 35px;
+    height: 35px;
+}
+
+.button-theme{
+    position: absolute;
+
+    border-color: var(--bdr-color);
+    border-style: double;
+    border-width: 5px;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    background-color: var(--bg-color);
+    background-image: var(--button-theme-bg-image-light-no-select);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    color: var(--text-color);
+    transform: translate(473px, 50px);
+}
+
+.button-theme:hover {
+    color: var(--focus-and-hover-text-color);
+    border-color: var(--focus-and-hover-bdr-color);
+    background-image: var(--button-theme-bg-image-light-select);
+    animation: var(--focus-and-hover-animation);
+}
+
+.button-theme:active {
+    color: var(--active-text-color);
+    background-image: var(--button-theme-bg-image-light-click);
+    background-color: var(--active-bg-color);
+    border-color: var(--active-bdr-color);
+    animation: var(--active-animation);
+}
